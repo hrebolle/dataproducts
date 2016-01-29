@@ -21,7 +21,9 @@ p { text-align: left; }
 
 The Nazca Plate, named after the Nazca region of southern Peru, is an oceanic tectonic plate in the eastern Pacific Ocean basin off the west coast of South America. 
 
-![Nazca Plate](./assets/img/pt3-nazca-plate-usgs.png)
+<div style='text-align: center;'>
+<img height='300' src='./assets/img/pt3-nazca-plate-usgs.png' />
+</div>
 
 The eastward motion of the Nazca Plate is one of the fastest among all tectonic plates. Its subduction beneath the South American Plate has produced massive earthquakes, including the largest ever recorded, the May 22, 1960 earthquake near Valdivia, magnitude 9.6.
 
@@ -70,10 +72,13 @@ The largest earthquake on earth (magn. = 9.6) occured near the city of Valdivia 
 <br>
 
 ```
-##           time latitude longitude depth mag                   place
-## 113 1960-05-22  -38.143   -73.407  25.0 9.6          Bio-Bio, Chile
-## 484 2010-02-27  -36.122   -72.898  22.9 8.8 offshore Bio-Bio, Chile
-## 112 1960-05-22  -38.061   -73.039  25.0 8.6        Araucania, Chile
+##           time                           place mag latitude longitude
+## 113 1960-05-22                  Bio-Bio, Chile 9.6  -38.143   -73.407
+## 484 2010-02-27         offshore Bio-Bio, Chile 8.8  -36.122   -72.898
+## 112 1960-05-22                Araucania, Chile 8.6  -38.061   -73.039
+## 414 2001-06-23 near the coast of southern Peru 8.4  -16.265   -73.641
+## 13  1922-11-11                  Atacama, Chile 8.3  -28.293   -69.852
+## 569 2015-09-16        48km W of Illapel, Chile 8.3  -31.573   -71.674
 ```
 
 The average is 5.3 earthquakes per year in this zone:
