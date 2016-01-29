@@ -12,10 +12,9 @@ The files contained in this repository are:
 3. global.R: data and variables required by both, ui.R and server.R
 4. NazcaQuakes.csv: actual data downloaded from the USGS Earthquake Archives site.
 5. index.Rmd: source for the slidify presentation of this application.
-6. README.md: This file.
-7. 
+6. README.md: This file. 
 
 The application is available in [shinyapps.io] (https://hrebolle.shinyapps.io/Quakes).
 
-The presentation of the application can be seen in this [GitHub repo] (https://github.com/hrebolle/dataproducts).
+The presentation of the application can be seen in this [GitHub repo] (https://github.com/hrebolle/dataproducts). 
 
