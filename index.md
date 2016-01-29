@@ -51,10 +51,15 @@ choosing dates from 1900-01-01 to 2015-12-31, in a rectangular zone of coordinat
 
 The data looks like this: 
 <br><br>
-```{r echo = FALSE}
-NqkData <- read.csv("NazcaQuakes.csv")
-head(NqkData)
 
+```
+##         time latitude longitude depth mag                           place
+## 1 1906-08-17  -32.400   -71.400    35 8.2               Valparaiso, Chile
+## 2 1913-08-06  -16.469   -73.823    25 7.7 near the coast of southern Peru
+## 3 1914-01-30  -36.292   -75.057    15 7.6 off the coast of Bio-Bio, Chile
+## 4 1918-05-20  -29.292   -71.857    20 6.8        offshore Coquimbo, Chile
+## 5 1918-12-04  -26.538   -70.608    40 7.8                  Atacama, Chile
+## 6 1919-03-02  -43.109   -71.695    15 7.2               Chubut, Argentina
 ```
 
 --- .class #id 
@@ -63,26 +68,36 @@ head(NqkData)
 
 The largest earthquake on earth (magn. = 9.6) occured near the city of Valdivia (Bio-Bio region, Chile), shown here together with other massive earthquakes:
 <br>
-```{r echo = FALSE}
-q <- NqkData[NqkData$mag>=8.5,]
-q[order(-q$mag),]
 
+```
+##           time latitude longitude depth mag                   place
+## 113 1960-05-22  -38.143   -73.407  25.0 9.6          Bio-Bio, Chile
+## 484 2010-02-27  -36.122   -72.898  22.9 8.8 offshore Bio-Bio, Chile
+## 112 1960-05-22  -38.061   -73.039  25.0 8.6        Araucania, Chile
 ```
 
 The average is 5.3 earthquakes per year in this zone:
-```{r}
+
+```r
 NqkData$year <- as.integer(substr(NqkData$time,1,4))
 round(nrow(NqkData) / (max(NqkData$year) - min(NqkData$year) + 1), 1)
+```
 
+```
+## [1] 5.3
 ```
 
 Large earthquakes (magnitude >= 7.5) occurs every 3.8 +/- 2.4 years
-```{r}
+
+```r
 q <- NqkData[NqkData$mag >= 7.5,]
 q1 <- q[!duplicated(q$year),c("year")]
 dif <- q1[-1] - q1[-length(q1)]
 paste(round(mean(dif),1), "+/-", round(sd(dif),1))
+```
 
+```
+## [1] "3.8 +/- 2.4"
 ```
 
 --- .class #id 
