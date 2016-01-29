@@ -64,7 +64,7 @@ head(NqkData)
 The largest earthquake on earth (magn. = 9.6) occured near the city of Valdivia (Bio-Bio region, Chile), shown here together with other massive earthquakes:
 <br>
 ```{r echo = FALSE}
-q <- NqkData[NqkData$mag>=8.3,]
+q <- NqkData[NqkData$mag>=8.5,]
 q[order(-q$mag),]
 
 ```
