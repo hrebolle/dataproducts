@@ -16,5 +16,5 @@ The files contained in this repository are:
 
 The application is available in [shinyapps.io] (https://hrebolle.shinyapps.io/Quakes).
 
-The presentation of the application can be seen in this [GitHub repo] (https://github.com/hrebolle/dataproducts). 
+The source code is available in this [GitHub repo] (https://github.com/hrebolle/dataproducts). 
 
